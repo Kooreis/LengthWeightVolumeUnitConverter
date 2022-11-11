@@ -1,17 +1,17 @@
-def length_conversion():
-    print("1. Millimeters to Centimeters")
-    print("2. Centimeters to Meters")
-    print("3. Meters to Kilometers")
+def weight_conversion():
+    print("1. Grams to Kilograms")
+    print("2. Kilograms to Pounds")
+    print("3. Pounds to Ounces")
     choice = int(input("Enter your choice: "))
     if choice == 1:
-        mm = float(input("Enter length in millimeters: "))
-        cm = mm / 10
-        print("Length in centimeters: ", cm)
+        g = float(input("Enter weight in grams: "))
+        kg = g / 1000
+        print("Weight in kilograms: ", kg)
     elif choice == 2:
-        cm = float(input("Enter length in centimeters: "))
-        m = cm / 100
-        print("Length in meters: ", m)
+        kg = float(input("Enter weight in kilograms: "))
+        lb = kg * 2.20462
+        print("Weight in pounds: ", lb)
     elif choice == 3:
-        m = float(input("Enter length in meters: "))
-        km = m / 1000
-        print("Length in kilometers: ", km)
+        lb = float(input("Enter weight in pounds: "))
+        oz = lb * 16
+        print("Weight in ounces: ", oz)
